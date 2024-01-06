@@ -5,7 +5,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
 const RecommendedProductPage = () => {
-  const { data } = useGetAllProductsQuery({});
+  const { data, isLoading } = useGetAllProductsQuery({});
 
   const [itemsToShow, setItemsToShow] = useState(5);
 
@@ -17,7 +17,14 @@ const RecommendedProductPage = () => {
     setItemsToShow(5);
   };
 
-  console.log(data?.Items);
+  if (isLoading) {
+    return (
+      <div className="flex justify-center my-20 text-success">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
+  }
+
   return (
     <div className="mx-5">
       <div className="max-w-[1280px] mx-auto mt-20">
