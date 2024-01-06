@@ -5,7 +5,7 @@ import img from "../../assets/Image1.png";
 const Banner = () => {
   return (
     <div className="mx-5">
-      <div className="max-w-[1280px] mx-auto lg:bg-yellow-500 lg:text-white rounded-3xl mt-20">
+      <div className="max-w-[1280px] mx-auto lg:bg-yellow-500 lg:text-white rounded-3xl mt-10 lg:mt-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:ps-28 lg:pe-10 items-center">
           <div className="text-center lg:text-start">
             <h2 className="text-3xl lg:text-5xl font-bold lg:leading-[55px]	">
