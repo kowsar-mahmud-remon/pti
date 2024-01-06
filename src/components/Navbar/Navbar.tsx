@@ -1,9 +1,4 @@
 import React from "react";
-import logo from "../../assets/logo.png";
-import Link from "next/link";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { CiSearch } from "react-icons/ci";
 import { LuUser2 } from "react-icons/lu";
 
@@ -14,7 +9,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full sticky top-0 z-10">
-      <div className=" max-w-[1440px] mx-auto navbar flex justify-between py-0">
+      <div className=" max-w-[1280px] mx-auto navbar flex justify-between py-0">
         <div className="navbar flex justify-between">
           <a className="text-3xl cursor-pointer font-semibold mr-7">pti.</a>
 
@@ -32,7 +27,7 @@ const Navbar = () => {
                 />
               </div>
             </div>
-            <ul className="menu menu-horizontal w-40 flex justify-center">
+            <ul className="menu menu-horizontal flex justify-center">
               <li>
                 <details className=" text-orange-500">
                   <summary className=" text-center">
