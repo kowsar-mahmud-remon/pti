@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
 
-const ProductsPage = () => {
+const RecommendedProductPage = () => {
   const { data } = useGetAllProductsQuery({});
 
   const [itemsToShow, setItemsToShow] = useState(5);
@@ -22,7 +22,7 @@ const ProductsPage = () => {
     <div className="mx-5">
       <div className="max-w-[1280px] mx-auto mt-20">
         <div className="flex justify-between">
-          <p className="text-xl font-semibold">Popular</p>
+          <p className="text-xl font-semibold">Recommended</p>
           <div className="flex items-center">
             <p className="text-lg font-semibold text-orange-500 hidden lg:block">
               AddMore{" "}
@@ -61,4 +61,4 @@ const ProductsPage = () => {
   );
 };
 
-export default ProductsPage;
+export default RecommendedProductPage;
